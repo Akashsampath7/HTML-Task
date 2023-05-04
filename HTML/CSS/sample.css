@@ -1,0 +1,63 @@
+header {
+    background-color: #88cef3;
+    color: white;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  header img{
+      height: 50px;
+      width: 50px;
+      margin-left: 20px;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Style the footer section */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+  }
+
+  .black-text {
+    color: rgb(69, 69, 75);
+  }
+  #small-text {
+    font-size: 18px;
+  }
+
+  .container { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items:center; 
+  } 
+  img { 
+      max-width: 50%; 
+      height: auto;
+      align-content:normal;
+      align-items:normal; 
+  }
+
+audio{
+    align-items: normal;
+    align-content: normal;
+
+}
+
+video{
+    align-items:normal;
+    left: 0%;
+
+}
+
+body{
+    background-image: url("/Images/YouTube.webp");
+    background-size: cover;
+    background-position: center;
+}
