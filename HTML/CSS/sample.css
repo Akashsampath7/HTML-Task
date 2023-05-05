@@ -12,15 +12,13 @@ header {
       margin-left: 20px;
   }
   
-  /* Style the main section */
   main {
     display: flex;
-    flex-wrap: wrap;
+    max-width: max-content;
   }
 
-  /* Style the footer section */
   footer {
-    background-color: #333;
+    background-color: #c5e112;
     color: white;
     text-align: left;
   }
@@ -47,17 +45,94 @@ header {
 audio{
     align-items: normal;
     align-content: normal;
-
 }
 
 video{
     align-items:normal;
     left: 0%;
-
 }
 
 body{
     background-image: url("/Images/YouTube.webp");
     background-size: cover;
     background-position: center;
+}
+
+.my-class{
+  font-size: 20px;
+  color: rgb(220, 154, 12);
+}
+
+.my-color{
+  font-size: 20px;
+  color: rgb(12, 26, 220);
+}
+
+#para2{
+  text-align:left;
+  color: rgb(255, 255, 255);
+}
+
+.Left {
+  margin: auto;
+  width: 100%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+div > p {
+  background-color: yellow;
+}
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+}
+
+dis {
+  background-color: rgb(117, 219, 250);
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+dis:hover {
+  background-color: rgb(175, 230, 108);
+}
+
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+a[target="_blank"] {
+  background-color: rgb(176, 176, 141);
+}
+
+p.solid {
+  border-style: solid;
+  border-width: 5px 20px;
+}
+
+e{
+  border-bottom: 4px solid rgb(2, 101, 98);
+}
+
+p.round3 {
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+did {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+
+div.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73AD21;
 }

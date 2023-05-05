@@ -13,36 +13,58 @@
     <img src="/Images/youtube-line.png" alt="Logo">
     <h1 style="text-align: center;" class="black-text" > Entertainment  </h1> 
 </header>
+
     <hr>
     <main>
-    <p>
-    <div><a href="https://www.youtube.com" target="_blank">YouTube Page </a></div> <br></p>
-    <h2>Definition</h2>
-    <p id="small-text">YouTube is a video sharing platform that was created in 2005. It allows users to upload and share videos, as well as view and comment on videos uploaded by others. YouTube was acquired by Google in 2006 and has since grown to become one of the largest websites in the world.</p>
-    <br>
-    <div>
-    <form>
-    <label for="email">Email:  </label>
+    <div class="Left"><h2>Definition</h2>
+      <section>
+      <p class="intro" id="small-text" class="my-color">YouTube is a video sharing platform that was created in 2005. It allows users to upload and share videos, as well as view and comment on videos uploaded by others. YouTube was acquired by Google in 2006 and has since grown to become one of the largest websites in the world.</p>
+      </section>
+      <br>
+
+    <form action="submit.php" method="POST">
+    <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
     <br><br>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
     <br><br>
-    <input type="submit" value="Submit">
+    <button type="submit">Submit</button>
     </form>
     <br>
+
+  <ul>
+    <li class="my-class" class="list-item">Action Movies</li>
+    <li class="my-class" class="list-item">Thriller Movies</li>
+    <li class="my-class" class="list-item">Comedy Movies</li>
+  </ul>
+  <script>
+    const listItems = document.querySelector('.list-item');
+    console.log(listItems);
+  </script>
+  <br>
+    <dis> Spotify</dis>
+    <br> <br> <br>
+    <audio controls> <source src="/Images/FM9B3TC-alarm.mp3"> </audio>
+    <br>
+    <video controls source  src="/Images/video_preview_h264.mp4" type="video/mp4" height="300" width="300"> </video> 
+    
+    <div>
+      <p class="solid">Paragraph 1 in the div.</p>
+      <section><e>Paragraph 2 in the div.</e></section>
+      <p class="round3">Paragraph 3 in the div.</p>
+      <section><p><did>Paragraph 4 in the div.</did></p></section>
     </div>
 
-    <div style="text-align: left;">
-    <audio controls> <source src="/Images/FM9B3TC-alarm.mp3"> </audio> </div>
-    <br> <br> <br>
+    <section><p><a class="highlight" href="https://wynk.in/music" target="_blank">Wynk Music</a></p></section>
 
-    <div style="text-align: left;">
-    <video controls source  src="/Images/video_preview_h264.mp4" type="video/mp4" height="300" width="300"> </video> </div>
+
+  </div>
+
 </main>
 
 <footer>
-    <p>&copy; 2023 My Entertainment Page</p>
+  <p id="para2"><a href="https://www.youtube.com" target="_blank">YouTube Page </a> &copy; 2023 My Entertainment Page</p>
   </footer>
 
 </body>
