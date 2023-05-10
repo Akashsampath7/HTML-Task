@@ -1,0 +1,12 @@
+#container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background: rgb(110, 110, 91);
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background: rgb(197, 41, 41);
+  }

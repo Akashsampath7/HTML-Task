@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Dom.css" >
+</head>
+<body>
+    <p id="idtag">Using ID</p>
+    <p class="classtag">Using Class Name</p>
+    <p class="csstag">Using CSS Selectors</p>
+    <p id="objcoll"></p>
+
+    <div id="tagtag">
+        <p>Using Tag Name</p>
+    </div>
+        <br> <br>
+        <p id="tag1"></p>
+        <p id="id2"></p>
+        <p id="class3"></p>
+        <p id="css4"></p>
+        
+        <script>
+        //Using TAgName
+        const TagTag = document.getElementById("tagtag");
+        const y = TagTag.getElementsByTagName("p");
+        document.getElementById("tag1").innerHTML = 
+        'Element: ' + y[0].innerHTML;
+        
+        //Using ID
+        const idTag = document.getElementById("idtag").style.color = "blue";
+        document.getElementById("id2").innerHTML = "Element: " + idTag.innerHTML;
+        
+        //Using Class Name
+        const classTag = document.getElementsByClassName("classtag");
+        document.getElementById("class3").innerHTML = 'Element: ' + classTag[0].innerHTML;
+
+        //Using CSS Selectors
+        const CssTag = document.querySelectorAll("p.csstag");
+        document.getElementById("css4").innerHTML = 'Element: ' + CssTag[0].innerHTML;
+
+        //Displaying date
+        document.write(Date());
+
+        //Form Validation
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name is Mandatory");
+                return false;
+            }
+        }
+
+        //Animation
+        function myMove() {
+        let id = null;
+        const elem = document.getElementById("animate");   
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+        if (pos == 250) {
+          clearInterval(id);
+        } else {
+        pos++; 
+        elem.style.bottom = pos + "px"; 
+        elem.style.right = pos + "px"; 
+    }
+    }
+}
+        //Using OnChange Event
+        function upperCase() {
+        const x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+    }
+        //Using MouseOver Event
+        function mOver(obj) {
+        obj.innerHTML = "CSK"
+    }
+        function mOut(obj) {
+        obj.innerHTML = "IPL Winner"
+    }
+
+    </script>
+
+        <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+<br> <br>
+        Enter your name: <input type="text" id="fname" onchange="upperCase()">
+<br> <br>
+        <div onmouseover="mOver(this)" onmouseout="mOut(this)">Mouse Over Me</div>
+<br> <br>
+        <button type="button"
+        onclick="document.getElementById('idtag').style.color = 'red'">Click Me!</button>
+<br> <br> 
+        <p><button onclick="myMove()">Click Animation</button></p> 
+        <div id="container">
+        <div id="animate"></div>
+<br> <br>
+   
+
+</body>
+</html>
