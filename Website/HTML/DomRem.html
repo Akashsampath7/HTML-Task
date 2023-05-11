@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">HTML DOM</h2>
+    <br> <hr>
+    <!--Event Listener-->
+    <button id="dateButton" class="Datebutton" style="color: blueviolet;">Dispaly Date</button>
+    <p id="date"></p>
+    <button id="AlertButton" class="alertbutton">Alert</button>
+    <p id="alertpart"></p>
+<hr>
+    <!--Navigation-->
+    <h1 id="id01" style="font-style: italic;">Navigation from heading to para</h1>
+    <p id="id02"></p>
+<hr>
+    <!--HTML Collection Object-->
+    <p style="color: rgb(230, 185, 127);">HTML Collection Object</p>
+    <o>Collections</o><br>
+    <o>Objects</o>
+    <p id="demo" style="color: crimson;"></p>
+<hr>
+    <div>
+        <p id="p1" style="color: blue;">This is a paragraph.</p>
+        </div>
+        <button onclick="myFunction()">Remove Element</button>
+    
+    <script>
+        //Event Listener
+        document.getElementById("dateButton").addEventListener("click",displaydate);
+
+        function displaydate(){
+            document.getElementById("date").innerHTML=Date(); 
+        }
+        //Event Listener
+        var x=document.getElementById("AlertButton");
+        x.addEventListener("click", myfunction);
+        x.addEventListener("click", someotherfunction);
+        function myfunction(){
+            alert("Working Properly");
+        }
+
+        function someotherfunction(){
+            alert("Done");
+        }
+
+        //Navigation
+        document.getElementById("id02").innerHTML = document.getElementById("id01").innerHTML;
+
+        //Remove existing HTML Elements
+        function myFunction() {
+        document.getElementById("p1").remove();
+        }
+        
+        //HTML Collection Objects
+        const myCollection = document.getElementsByTagName("o");
+        document.getElementById("demo").innerHTML = "Getting 0th position is: " + myCollection[1].innerHTML;
+    </script>
+
+</body>
+</html>
